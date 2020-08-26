@@ -1,3 +1,48 @@
+# File and Stream I/O
+
+## Defintion
+-- File and stream I/O (input/output) refers to the transfer of data either to or from a storage medium.
+-- In the .NET Framework, the System.IO namespaces contain types that enable reading and writing, both synchronously and asynchronously, on data streams and files.
+-- These namespaces also contain types that perform compression and decompression on files, and types that enable communication through pipes and serial ports.
+
+### Here are some commonly used file and directory classes:
+
+ 1. File - provides static methods for creating, copying, deleting, moving, and opening files, and helps create a FileStream object.
+
+ 1. FileInfo - provides instance methods for creating, copying, deleting, moving, and opening files, and helps create a FileStream object.
+
+ 1. Directory - provides static methods for creating, moving, and enumerating through directories and subdirectories.
+
+ 1. DirectoryInfo - provides instance methods for creating, moving, and enumerating through directories and subdirectories.
+
+ 1. Path - provides methods and properties for processing directory strings in a cross-platform manner.
+
+#### Streams involve three fundamental operations:
+
+1. Reading - transferring data from a stream into a data structure, such as an array of bytes.
+
+1. Writing - transferring data to a stream from a data source.
+
+1. Seeking - querying and modifying the current position within a stream.
+
+#### How to: Write text to a file
+
+1. This topic shows different ways to write text to a file for a .NET app.
+
+1. The following classes and methods are typically used to write text to a file:
+
+1. StreamWriter contains methods to write to a file synchronously (Write and WriteLine) or asynchronously (WriteAsync and WriteLineAsync).
+
+1. File provides static methods to write text to a file, such as WriteAllLines and WriteAllText, or to append text to a file, such as AppendAllLines, AppendAllText, and AppendText.
+
+1. Path is for strings that have file or directory path information. It contains the Combine method and, in .NET Core 2.1 and later, the Join and TryJoin methods, which allow concatenation of strings to build a file or directory path.
+
+##### How to: Read and write to a newly created data file
+
+The System.IO.BinaryWriter and System.IO.BinaryReader classes are used for writing and reading data other than character strings. The following example shows how to create an empty file stream, write data to it, and read data from it.
+
+The example creates a data file called Test.data in the current directory, creates the associated BinaryWriter and BinaryReader objects, and uses the BinaryWriter object to write the integers 0 through 10 to Test.data, which leaves the file pointer at the end of the file. The BinaryReader object then sets the file pointer back to the origin and reads out the specified content.
+=======
 3 Unit Testing
 
 ## Unit Testing
@@ -21,56 +66,3 @@ $ mkdir MyFirstUnitTests
 $ cd MyFirstUnitTests
 $ dotnet new classlib
 The template "Class library" was created successfully.
-
-Readme Best Practices
-A place to copy-paste your README.md from
-
-One of the most crucial things in your open source project is the README.md file. This repository has a ready-to-copy-paste template you can use for all your projects.
-
-Getting started
-Copy the README-default.md file for yourself and start editing! At the root of your project, run:
-
-curl https://raw.githubusercontent.com/jehna/readme-best-practices/master/README-default.md > README.md
-The code above fetches the README-default.md file from this repository and renames it to README.md.
-
-Fill with your own text
-The default template has some guiding text to get you started. However you'll need to edit the file with your own text to use it with your project.
-
-atom README.md
-If you're using Atom code editor, the code above opens the file for editing. If necessary, substitute with your preferred markdown editor.
-
-Add to git and push
-After you've filled your README.md file with your own project's text, you should push it to your GitHub project:
-
-git add README.md
-git commit -m "Added: README"
-git push
-This adds the README.md file to your git repository, creates a commit for it and pushes it to GitHub (or other preferred remote repository).
-
-Features
-This project makes it easy to:
-
-Bootstrap your open source project properly
-Make sure everyone gets what you're trying to achieve with your project
-Follow simple instructions for a perfect README.md
-Contributing
-As I use this for my own projects, I know this might not be the perfect approach for all the projects out there. If you have any ideas, just open an issue and tell me what you think.
-
-If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
-
-If your vision of a perfect README.md differs greatly from mine, it might be because your projects are for vastly different. In this case, you can create a new file README-yourplatform.md and create the perfect boilerplate for that.
-
-E.g. if you have a perfect README.md for a Grunt project, just name it as README-grunt.md.
-
-Related projects
-Here's a list of other related projects where you can find inspiration for creating the best possible README for your own project:
-
-Billie Thompson's README template
-A list of awesome READMEs
-Akash Nimare's kickass README guide
-Dan Bader's README template
-Licensing
-This project is licensed under Unlicense license. This license does not require you to take the license with you to your project.
-
-About
-Best practices for writing a README 
