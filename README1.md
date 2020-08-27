@@ -1,4 +1,4 @@
-﻿# Exceptiuo Handling
+﻿# Exception Handling
 
 ## How to Catch
 --How to use the try/catch block to catch exceptions
