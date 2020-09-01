@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+﻿# File and Stream I/O
+=======
 # File and Stream I/O
+>>>>>>> 44afef69c804e45a453d15eb3b021ec5c0f85aab
 
 ## Defintion
 -- File and stream I/O (input/output) refers to the transfer of data either to or from a storage medium.
@@ -41,6 +45,9 @@
 
 The System.IO.BinaryWriter and System.IO.BinaryReader classes are used for writing and reading data other than character strings. The following example shows how to create an empty file stream, write data to it, and read data from it.
 
+<<<<<<< HEAD
+The example creates a data file called Test.data in the current directory, creates the associated BinaryWriter and BinaryReader objects, and uses the BinaryWriter object to write the integers 0 through 10 to Test.data, which leaves the file pointer at the end of the file. The BinaryReader object then sets the file pointer back to the origin and reads out the specified content.
+=======
 The example creates a data file called Test.data in the current directory, creates the associated BinaryWriter and BinaryReader objects, and uses the BinaryWriter object to write the integers 0 through 10 to Test.data, which leaves the file pointer at the end of the file. The BinaryReader object then sets the file pointer back to the origin and reads out the specified content.
 =======
 3 Unit Testing
@@ -66,3 +73,4 @@ $ mkdir MyFirstUnitTests
 $ cd MyFirstUnitTests
 $ dotnet new classlib
 The template "Class library" was created successfully.
+>>>>>>> 44afef69c804e45a453d15eb3b021ec5c0f85aab
