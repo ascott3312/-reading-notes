@@ -7,7 +7,7 @@
  [Object Oriented Principles]{README4.md}
  [Collections & Enums]{README5.md}
  []{README6.md}
- []{README7.md}
+ [Implementation: Stacks and Queues]{README7.md}
  [Collections & Enums]{README8.md}
  [Intro to ERDs]{README9.md}
  [EF Core & APIs]{README10.md}
