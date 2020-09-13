@@ -6,7 +6,7 @@
  [Unit Testing]{README3.md}
  [Object Oriented Principles]{README4.md}
  [Collections & Enums]{README5.md}
- []{README6.md}
+ [Collections & Enums]{README6.md}
  [Implementation: Stacks and Queues]{README7.md}
  [Collections & Enums]{README8.md}
  [Intro to ERDs]{README9.md}
